@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum and Product of Array</title>
+</head>
+<body>
+    <script>
+        var integers = [1, 2, 3, 4, 5];
+
+        var sum = integers.reduce(function(accumulator, currentValue) {
+            return accumulator + currentValue;
+        }, 0);
+
+        var product = integers.reduce(function(accumulator, currentValue) {
+            return accumulator * currentValue;
+        }, 1);
+
+        document.write("Sum: " + sum + "<br>");
+        document.write("Product: " + product + "<br>");
+    </script>
+</body>
+</html>
